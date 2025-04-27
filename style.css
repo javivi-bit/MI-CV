@@ -1,0 +1,137 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #000000;
+    padding: 1rem;
+  }
+  
+  .cv-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Botones de accesibilidad */
+  .text-size-buttons {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .text-size-buttons button {
+    background-color: #2A68A0;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .text-size-buttons button:hover {
+    background-color: #1d4f7a;
+  }
+  
+  /* HEADER */
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    color: #2A68A0;
+    font-size: 2rem;
+  }
+  
+  header a {
+    color: #2A68A0;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Secciones Azul */
+  .section-blue {
+    background-color: #f0f4fb;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .section-blue h2 {
+    color: #2A68A0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .section-blue h3 {
+    color: #43479E;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skills {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .skills ul {
+    list-style: disc inside;
+  }
+  
+  article h3 {
+    color: #43479E;
+  }
+  
+  /* Secciones Negro */
+  .section-black {
+    background-color: #000000;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .section-black h2 {
+    color: #BBB5DB;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .section-black ul {
+    list-style: disc inside;
+  }
+  
+  .section-black a {
+    color: #BBB5DB;
+    text-decoration: underline;
+  }
+  
+  .section-black a:hover {
+    color: #fff;
+  }
+  
+  /* Adaptabilidad */
+  @media (max-width: 768px) {
+    .skills {
+      flex-direction: column;
+    }
+  }
+  
