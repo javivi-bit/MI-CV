@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Javier Alonso Guerra Saavedra</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilo Azul (o cambiaremos al de Negro) -->
+  <link id="theme-stylesheet" rel="stylesheet" href="css/style-blue.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="text-size-buttons">
+    <button onclick="changeFontSize(1)">A+</button>
+    <button onclick="changeFontSize(-1)">A-</button>
+  </div>
+
+  <div class="cv-container">
+
+    <!-- Información de contacto -->
+    <header>
+      <h1>Javier Alonso Guerra Saavedra</h1>
+      <p>Email: <a href="mailto:jguerras@utem.cl">jguerras@utem.cl</a></p>
+      <p>Ubicación: Santiago, Chile</p>
+    </header>
+
+    <!-- Perfil profesional -->
+    <section class="section-blue">
+      <h2>Perfil Profesional</h2>
+      <p>Estudiante de Ingeniería en Informática, apasionado por la tecnología y el desarrollo de soluciones innovadoras. Poseo sólidos conocimientos en programación, estructuras de datos y bases de datos, y busco contribuir en proyectos que generen un impacto positivo.</p>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section-blue">
+      <h2>Habilidades Clave</h2>
+      <div class="skills">
+        <div>
+          <h3>Técnicas</h3>
+          <ul>
+            <li>C y C++ (básico)</li>
+            <li>Estructuras de datos (básico)</li>
+            <li>MySQL (básico)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Blandas</h3>
+          <ul>
+            <li>Trabajo en equipo</li>
+            <li>Comunicación efectiva</li>
+            <li>Adaptabilidad</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia académica -->
+    <section class="section-blue">
+      <h2>Experiencia Académica</h2>
+
+      <article>
+        <h3>Diseñador y Desarrollador – Sistema de Riego Automático</h3>
+        <p>📍 Santiago, Chile | 📅 2024</p>
+        <ul>
+          <li>Diseñé y desarrollé una página web para controlar un sistema de riego automático utilizando sensores y Arduino.</li>
+          <li>Integré sensores de humedad y programé la lógica de activación/desactivación remota.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Desarrollador – Cálculo de Ruta en Metro de Santiago</h3>
+        <p>📍 Santiago, Chile | 📅 2024</p>
+        <ul>
+          <li>Implementé un algoritmo eficiente para calcular la ruta más rápida entre estaciones del metro de Santiago.</li>
+          <li>Optimicé el sistema utilizando estructuras de datos adecuadas como grafos y algoritmos de búsqueda.</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <!-- Certificaciones -->
+    <section class="section-blue">
+      <h2>Certificaciones y Cursos</h2>
+      <p>No se registran certificaciones hasta la fecha.</p>
+    </section>
+
+    <!-- Idiomas -->
+    <section class="section-blue">
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español – Nativo</li>
+        <li>Inglés – A2 (Básico)</li>
+      </ul>
+    </section>
+
+    <!-- Extras -->
+    <section class="section-blue">
+      <h2>Referencias</h2>
+      <p>Disponibles a solicitud.</p>
+    </section>
+
+  </div>
+
+<script>
+function changeFontSize(delta) {
+  const body = document.body;
+  const style = window.getComputedStyle(body, null).getPropertyValue('font-size');
+  const currentSize = parseFloat(style);
+  body.style.fontSize = (currentSize + delta) + 'px';
+}
+</script>
+
+</body>
+</html>
